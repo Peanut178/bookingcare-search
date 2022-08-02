@@ -101,14 +101,14 @@ const Home = () => {
                 getData()
             }, 1000
             );
-            console.log('start change', start);
+            // console.log('start change', start);
         }
     }, [start]);
 
     const executeScroll = () => myRef.current.scrollIntoView()
 
     return (
-        <div>
+        <>
             <div className="home" onScroll={handleScroll} >
                 <div className="home__header" ref={myRef}>
                     <div className="home__header-left">
@@ -174,7 +174,7 @@ const Home = () => {
                 </div>
             </div>
 
-        </div>
+        </>
 
     );
 }
