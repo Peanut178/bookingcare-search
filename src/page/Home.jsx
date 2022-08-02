@@ -6,7 +6,7 @@ import { FaArrowCircleUp } from 'react-icons/fa';
 import { Avatar } from "@material-ui/core";
 import ReactLoading from "react-loading";
 import "./Home.scss";
-import {API_KEY, CONTEXT_KEY } from "../keys";
+import { API_KEY, CONTEXT_KEY } from "../keys";
 
 const Home = () => {
     const [query, setQuery] = useState('')
@@ -69,7 +69,7 @@ const Home = () => {
             setVisible(false)
         }
         if (scrollHeight - scrollTop === clientHeight) {
-            start < 100 && setStart(prev => prev + 10)
+            start < 90 && setStart(prev => prev + 10)
         }
     }
 
